@@ -1,8 +1,8 @@
 
 
 @echo off&setlocal enabledelayedexpansion
-set startDate=2019/12/31
-set end=32
+set startDate=2019/11/30
+set end=31
 set yyyy=%startDate:~0,4%
 set mm=%startDate:~5,2%
 set dd=%startDate:~8,2%
@@ -10,10 +10,7 @@ set action=0
 :actionFlag
 set /a od=!dd!-%action%
 set /a action+=1
-if %od%==0 (
-	echo "0000"
-	pause
-)
+
 set yyyymmdd=!yyyy!-!mm!-!od!
 
 echo ÈÕÆÚ !yyyymmdd!
