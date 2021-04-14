@@ -1,7 +1,7 @@
 
 
 @echo off&setlocal enabledelayedexpansion
-set startDate=2021/04/16
+set startDate=2021/03/26
 set end=6
 set yyyy=%startDate:~0,4%
 set mm=%startDate:~5,2%
