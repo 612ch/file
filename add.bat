@@ -1,0 +1,1 @@
+set/p a=输入要增加的文字 for /f "delims=" %%i in ('dir /b test.txt') do ( echo %a%>>%%i )
