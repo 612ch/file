@@ -1,8 +1,8 @@
 
 
 @echo off&setlocal enabledelayedexpansion
-set startDate=2022/6/02
-set end=10
+set startDate=2022/5/31
+set end=32
 set yyyy=%startDate:~0,4%
 set mm=%startDate:~5,2%
 set dd=%startDate:~8,2%
@@ -13,13 +13,7 @@ set /a om=%action%
 set /a action+=1
 if !od!==0 call :dd0
 if !mm!==0 call :mm0
-if %od%==0 (
-	echo %od%
-	set /a od=31
-	set /a dd=31
-	set /a om=!om!-1
-	pause
-)
+
 set yyyymmdd=!yyyy!-!om!-!od!
 
 echo ÈÕÆÚ !yyyymmdd!
