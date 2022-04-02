@@ -16,6 +16,7 @@ if !mm!==0 call :mm0
 if %od%==0 (
 	echo %od%
 	set /a od=31
+	set /a dd=31
 	set /a om=!om!-1
 	pause
 )
