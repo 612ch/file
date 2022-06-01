@@ -13,7 +13,6 @@ set /a action+=1
 if !od!==0 call :dd0
 if !mm!==0 call :mm0
 if %od%==0 (
-	echo "0000"
 	echo %od%
 	pause
 )
