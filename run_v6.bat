@@ -1,8 +1,8 @@
 
 
 @echo off&setlocal enabledelayedexpansion
-set startDate=2022/06/30
-set end=31
+set startDate=2022/06/02
+set end=10
 set yyyy=%startDate:~0,4%
 set mm=%startDate:~5,2%
 set dd=%startDate:~8,2%
@@ -14,7 +14,7 @@ if !od!==0 call :dd0
 if !mm!==0 call :mm0
 if %od%==0 (
 	echo "0000"
-	%od%=31
+	echo %od%
 	pause
 )
 set yyyymmdd=!yyyy!-!mm!-!od!
