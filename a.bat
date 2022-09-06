@@ -1,1 +1,0 @@
-mshta vbscript:msgbox("处理完成！！",64,"提示")(window.close)
