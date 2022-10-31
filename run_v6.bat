@@ -2,7 +2,7 @@
 
 @echo off&setlocal enabledelayedexpansion
 set startDate=2022/10/31
-set end=14
+set end=2
 set yyyy=%startDate:~0,4%
 set mm=%startDate:~5,2%
 set dd=%startDate:~8,2%
@@ -20,7 +20,7 @@ set targetDay=!yyyymmdd!
 
 title ´¦ÀíÖÐV7
 
-set min=-1
+set min=0
 set max=8
 set /a mod=!max!-!min!+1
 set /a r=!random!%%!mod!+!min!
@@ -31,14 +31,13 @@ set n=0
 
 :startFlag
 
-if -1==%randomNumber% goto actionFlag
 if 0==%randomNumber% goto actionFlag
 
 set addtext= %date% %time%
 set filename="test.txt"
 
 
-if %action%==%end% exit
+if %action%==%end% git.exe push --progress "origin" main:main  && exit
  
 
 echo.>>%filename%
@@ -51,7 +50,7 @@ ren temp.txt test.txt
 
 git commit -a -m "commit test by demon" --date="%targetDay% %time%"
 
-git.exe push --progress "origin" main:main
+
 
 set /a n+=1
 
