@@ -37,8 +37,13 @@ set addtext= %date% %time%
 set filename="test.txt"
 
 
-if %action%==%end% git.exe push --progress "origin" main:main  && exit
- 
+if %action%==%end% (
+git.exe push --progress "origin" main:main
+) 
+
+if %action%==%end% (
+exit
+) 
 
 echo.>>%filename%
 
