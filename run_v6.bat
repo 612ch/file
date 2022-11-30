@@ -1,8 +1,8 @@
 
 
 @echo off&setlocal enabledelayedexpansion
-set startDate=2022/12/31
-set end=32
+set startDate=2022/11/30
+set end=31
 set yyyy=%startDate:~0,4%
 set mm=%startDate:~5,2%
 set dd=%startDate:~8,2%
@@ -20,7 +20,7 @@ set targetDay=!yyyymmdd!
 
 title ¥¶¿Ì÷–V7
 
-set min=0
+set min=-1
 set max=8
 set /a mod=!max!-!min!+1
 set /a r=!random!%%!mod!+!min!
@@ -31,6 +31,7 @@ set n=0
 
 :startFlag
 
+if -1==%randomNumber% goto actionFlag
 if 0==%randomNumber% goto actionFlag
 
 set addtext= %date% %time%
