@@ -18,7 +18,7 @@ echo 日期 !yyyymmdd!
 
 set targetDay=!yyyymmdd!
 
-title 处理中V6
+title 处理中V7
 
 set min=2 
 set max=11
@@ -48,7 +48,7 @@ ren temp.txt test.txt
 
 git commit -a -m "commit test by demon" --date="%targetDay% %time%"
 
-git.exe push --progress "origin" file_v6:file_v6
+git.exe push --progress "origin" file_v7:file_v7
 
 set /a n+=1
 
