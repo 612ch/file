@@ -21,7 +21,7 @@ set targetDay=!yyyymmdd!
 title ´¦ÀíÖĞV7
 
 set min=0
-set max=5
+set max=8
 set /a mod=!max!-!min!+1
 set /a r=!random!%%!mod!+!min!
 set randomNumber=!r!
