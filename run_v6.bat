@@ -31,6 +31,8 @@ set n=0
 
 :startFlag
 
+if 0==%randomNumber% goto actionFlag
+
 set addtext= %date% %time%
 set filename="test.txt"
 
