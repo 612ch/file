@@ -1,7 +1,7 @@
 
 
 @echo off&setlocal enabledelayedexpansion
-set startDate=2023/04/21
+set startDate=2023/04/07
 set end=6
 set yyyy=%startDate:~0,4%
 set mm=%startDate:~5,2%
@@ -20,7 +20,7 @@ set targetDay=!yyyymmdd!
 
 title ´¦ÀíÖĞV7
 
-set min=1
+set min=0
 set max=5
 set /a mod=!max!-!min!+1
 set /a r=!random!%%!mod!+!min!
