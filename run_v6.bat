@@ -48,7 +48,7 @@ ren temp.txt test.txt
 
 git commit -a -m "commit test by demon" --date="%targetDay% %time%"
 
-git.exe push --progress "origin" file_v7:file_v7
+git.exe push --progress "origin" main:main
 
 set /a n+=1
 
